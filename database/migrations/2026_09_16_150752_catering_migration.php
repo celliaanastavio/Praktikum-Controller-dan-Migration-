@@ -14,6 +14,7 @@ return new class extends Migration
             Schema::create('menus', function (Blueprint $table) {
                 $table->id();
                 $table->string('nama_menu');
+                $table->string('kategori');
                 $table->text('deskripsi');
                 $table->integer('harga');
                 $table->timestamps();
